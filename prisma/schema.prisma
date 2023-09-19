@@ -15,8 +15,8 @@ model User {
   emailVerified           DateTime?
   image                   String?                  @db.Text
   backgroundImage         String?                  @db.Text
-  description             String?                  @db.Text
   handle                  String?                  @unique
+  description             String?                  @db.Text
   videos                  Video[]
   videoEngagements        VideoEngagement[]
   playlists               Playlist[]
